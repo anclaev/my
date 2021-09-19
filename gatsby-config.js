@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://anclaev.com/",
@@ -57,7 +59,7 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: "./src/assets/svg",
+          include: path.resolve(__dirname + "src/assets/svg"),
         },
       },
     },

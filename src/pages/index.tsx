@@ -1,13 +1,8 @@
-import { PageProps } from "gatsby"
-import * as React from "react"
-import Layout from "../components/Layout"
+import React from "react"
+import Layout from "../containers/Layout"
 
-const IndexPage = (props: PageProps) => {
-  return (
-    <Layout>
-      <main>Привет, мир!</main>
-    </Layout>
-  )
+const IndexPage: React.FC = () => {
+  return <Layout>Привет, мир!</Layout>
 }
 
 export default IndexPage

@@ -1,5 +1,11 @@
 import React from "react"
 
-const Overlay: React.FC = () => <div></div>
+import Header from "../Header"
+
+const Overlay: React.FC = () => (
+  <>
+    <Header />
+  </>
+)
 
 export default Overlay

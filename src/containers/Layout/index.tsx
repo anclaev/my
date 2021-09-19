@@ -3,12 +3,14 @@ import { useIntl } from "gatsby-plugin-intl"
 import { Helmet } from "react-helmet"
 
 import StyledDoc from "../../styles"
-import { StyledLayout } from "../../styles/containers"
+import { Layout as Styled } from "../../styles/containers"
 
-import Header from "../Header"
-
+import Background from "../../components/Background"
 import Cursor from "../../components/Cursor"
+
 import { ICursor } from "../../types/components"
+
+import Overlay from "../Overlay"
 
 const Layout: React.FC = ({ children }) => {
   const intl = useIntl()
@@ -32,7 +34,7 @@ const Layout: React.FC = ({ children }) => {
   return (
     <>
       <StyledDoc />
-      <StyledLayout onMouseMove={cursorMoveHandler}>
+      <Styled onMouseMove={cursorMoveHandler}>
         <Helmet htmlAttributes={{ lang: intl.locale }}>
           <title>{intl.formatMessage({ id: "site_title" })}</title>
           <meta
@@ -40,10 +42,14 @@ const Layout: React.FC = ({ children }) => {
             content={intl.formatMessage({ id: "site_description" })}
           />
         </Helmet>
-        <Header />
+        <Overlay />
         {children}
         <Cursor {...cursor} />
-      </StyledLayout>
+        <Background
+          alt={intl.formatMessage({ id: "home_background_alt" })}
+          transparency="0.1"
+        />
+      </Styled>
     </>
   )
 }

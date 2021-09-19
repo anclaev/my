@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "anclaev",
+    siteUrl: "https://anclaev.com/",
+    title: "Anclaev",
   },
   plugins: [
     "gatsby-plugin-image",
@@ -40,10 +40,26 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "assets",
-        path: "./src/assets/",
+        name: "images",
+        path: "./src/assets/images",
       },
-      __key: "assets",
+      __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "fonts",
+        path: "./src/assets/fonts",
+      },
+      __key: "fonts",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/assets/images",
+      },
+      __key: "images",
     },
     {
       resolve: `gatsby-plugin-typescript`,

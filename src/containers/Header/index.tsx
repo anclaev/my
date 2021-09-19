@@ -1,12 +1,13 @@
 import React from "react"
-import { StyledLogo } from "../../styles/components"
-import { StyledHeader } from "../../styles/containers"
+
+import { Logo } from "../../styles/components"
+import { Header as Styled } from "../../styles/containers"
 
 const Header: React.FC = () => {
   return (
-    <StyledHeader>
-      <StyledLogo className="cursor">anclaev</StyledLogo>
-    </StyledHeader>
+    <Styled>
+      <Logo className="cursor">anclaev</Logo>
+    </Styled>
   )
 }
 

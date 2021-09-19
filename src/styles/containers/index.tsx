@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const StyledLayout = styled.div`
+export const Layout = styled.div`
   position: relative;
   height: 100%;
   display: flex;
@@ -9,7 +9,7 @@ export const StyledLayout = styled.div`
   padding: 7.083rem 12.5%;
 `
 
-export const StyledHeader = styled.header`
+export const Header = styled.header`
   position: absolute;
   left: 3.333rem;
   top: 2.917rem;
@@ -25,7 +25,7 @@ export const StyledHeader = styled.header`
   }
 `
 
-export const StyledSocial = styled.div<{ status: boolean }>`
+export const Social = styled.div<{ status: boolean }>`
   position: absolute;
   display: flex;
   flex-direction: column-reverse;

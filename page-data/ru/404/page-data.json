@@ -1,0 +1,6 @@
+{
+    "componentChunkName": "component---src-pages-404-tsx",
+    "path": "/ru/404/",
+    "result": {"pageContext":{"matchPath":"/ru/*","language":"ru","intl":{"language":"ru","languages":["ru","en"],"messages":{"site_title":"Веб-девелопер | Anclaev","site_description":"Разработка прогрессивных веб-приложений"},"routed":true,"originalPath":"/404/","redirect":true,"defaultLanguage":"ru"}}},
+    "staticQueryHashes": [],
+    "matchPath": "/ru/*"}

@@ -5,13 +5,20 @@ import Fonts from "./fonts.css"
 const StyledDoc = createGlobalStyle`
     ${Fonts}
 
+    :root {
+        --color-primary: #FFE49E;
+        --color-primary-selected: #FFB800;
+        --color-bg: #fff;
+        --color-content: #181818;
+    }
+
     * {
         box-sizing: border-box;
         overflow-x: hidden;
 
         &::selection {
-            color: #fff;
-            background: #111;
+            color: var(--color-content);
+            background: var(--color-bg);
         }
     }
 
@@ -19,13 +26,23 @@ const StyledDoc = createGlobalStyle`
         font-size: 15px;
     }
 
+    h1, h2 {
+        margin: 0;
+    }
+
     body {
         margin: 0;
         height: 1em;
         min-height: 100vh;
         background: #111;
-        color: #fff;
         font-family: 'Bebas Neue';
+        color: var(--color-light);
+    }
+
+    body section {
+        height: 100%;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
     }
 
 	#___gatsby, #___gatsby > div, &___gatsby > div > div {
@@ -56,11 +73,11 @@ const StyledDoc = createGlobalStyle`
 
     ::-webkit-scrollbar {
     width: 7px;
-    background: #fff;
+    background: var(--color-primary);
     }
 
     ::-webkit-scrollbar-thumb {
-        background: #111;
+        background: var(--color-content);
         opacity: 0.5;
     }
 
@@ -85,6 +102,11 @@ const StyledDoc = createGlobalStyle`
     @media (max-width: 992px) {
         html {
             font-size: 24px;
+        }
+
+        body section {
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
         }
     }
 

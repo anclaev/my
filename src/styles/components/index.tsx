@@ -99,14 +99,19 @@ export const Background = styled.div<Pick<IBackground, "transparency">>`
 `
 
 export const Social = styled.div`
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column-reverse;
 
   left: calc(3.333rem - 18px);
   bottom: calc(2.917rem - 25px);
 
+  mix-blend-mode: difference;
   z-index: 7;
+
+  & * {
+    user-select: none;
+  }
 
   @media (max-width: 992px) {
     display: none;

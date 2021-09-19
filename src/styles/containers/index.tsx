@@ -3,20 +3,20 @@ import styled from "styled-components"
 export const Layout = styled.div`
   position: relative;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 7.083rem 12.5%;
 `
 
 export const Header = styled.header`
-  position: absolute;
+  display: flex;
+  mix-blend-mode: difference;
+  height: 18px;
+
   left: 3.333rem;
   top: 2.917rem;
   right: 3.333rem;
-  height: 18px;
+
+  position: fixed;
   overflow: visible;
-  display: flex;
+  color: var(--color-bg);
 
   @media (max-width: 992px) {
     left: 1.25rem;

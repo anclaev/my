@@ -1,7 +1,7 @@
 import React from "react"
-import Social from "../../components/Social"
 
 import Header from "../Header"
+import Social from "../../components/Social"
 
 const Overlay: React.FC = () => (
   <>

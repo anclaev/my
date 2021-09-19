@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components"
 
+import Fonts from "./fonts.css"
+
 const StyledDoc = createGlobalStyle`
+    ${Fonts}
+
     * {
         box-sizing: border-box;
         overflow-x: hidden;
@@ -21,6 +25,7 @@ const StyledDoc = createGlobalStyle`
         min-height: 100vh;
         background: #111;
         color: #fff;
+        font-family: 'Bebas Neue';
     }
 
 	#___gatsby, #___gatsby > div, &___gatsby > div > div {

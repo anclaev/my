@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-index-tsx",
     "path": "/ru/",
     "result": {"pageContext":{"language":"ru","intl":{"language":"ru","languages":["ru","en"],"messages":{"site_title":"Веб-девелопер | Anclaev","site_description":"Разработка прогрессивных веб-приложений","home_title":"Разработка прогрессивных веб-приложений","home_subtitle":"Фронтенд & веб-дизайн","home_background_alt":"Image: Фон (Дождливый)"},"routed":true,"originalPath":"/","redirect":true,"defaultLanguage":"ru"}}},
-    "staticQueryHashes": ["3124041377"]}
+    "staticQueryHashes": ["3043714642"]}

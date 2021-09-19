@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-index-tsx",
     "path": "/en/",
     "result": {"pageContext":{"language":"en","intl":{"language":"en","languages":["ru","en"],"messages":{"site_title":"Web Developer | Anclaev","site_description":"Developing progressive web applications","home_title":"Developing progressive web applications","home_subtitle":"Frontend & Web Design","home_background_alt":"Image: Background (Rainy)"},"routed":true,"originalPath":"/","redirect":true,"defaultLanguage":"ru"}}},
-    "staticQueryHashes": ["3124041377"]}
+    "staticQueryHashes": ["3043714642"]}

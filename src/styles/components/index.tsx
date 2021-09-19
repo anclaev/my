@@ -97,3 +97,43 @@ export const Background = styled.div<Pick<IBackground, "transparency">>`
     }
   }
 `
+
+export const Social = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column-reverse;
+
+  left: calc(3.333rem - 18px);
+  bottom: calc(2.917rem - 25px);
+
+  z-index: 7;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+`
+
+export const SocialLink = styled.a`
+  padding: 35px 30px;
+  overflow: visible;
+  position: relative;
+
+  &:hover {
+    & img {
+      width: 25px;
+      height: 25px;
+      opacity: 0.7;
+    }
+  }
+
+  & > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+    width: 18px;
+    height: 18px;
+    mix-blend-mode: difference;
+  }
+`

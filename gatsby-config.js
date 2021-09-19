@@ -40,14 +40,6 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/assets/images",
-      },
-      __key: "images",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
         name: "fonts",
         path: "./src/assets/fonts",
       },
@@ -60,6 +52,14 @@ module.exports = {
         path: "./src/assets/images",
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: "./src/assets/svg",
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-typescript`,

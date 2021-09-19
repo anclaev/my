@@ -1,4 +1,4 @@
-import { IStaticImageProps } from "gatsby-plugin-image/dist/src/components/static-image.server"
+import { GatsbyImageProps } from "gatsby-plugin-image"
 
 export interface ICursor {
   x: number
@@ -6,7 +6,7 @@ export interface ICursor {
   status: boolean
 }
 
-export interface IImage extends Omit<IStaticImageProps, "src"> {}
+export interface IImage extends GatsbyImageProps {}
 
 export interface IBackground {
   transparency: string

@@ -7,8 +7,8 @@ import Telegram from "../../assets/svg/telegram.svg"
 
 import { Social as Styled, SocialLink } from "../../styles/components"
 
-const Social: React.FC = () => (
-  <Styled>
+const Social: React.FC<{custom?: boolean}> = ({custom = false}) => (
+  <Styled custom={custom}>
     <SocialLink
       href="https://instagram.com/anclaev"
       target="_blank"

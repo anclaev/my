@@ -20,3 +20,20 @@ export interface IMenu {
 export interface IMenuProps extends IMenu {
   setStatus?: (status: boolean) => void
 }
+
+export interface IHelmetProps {
+  lang: string,
+  title: string,
+  description: string,
+  url?: string,
+  username?: string,
+  img?: {
+    twitter: string,
+    og: string
+  },
+  og?: {
+    locale: string;
+    alt: string;
+    type: string;
+  }
+}

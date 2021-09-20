@@ -6,7 +6,7 @@ import Layout from "../containers/Layout"
 
 import { Hello } from "../styles/pages/Home"
 import { Me } from "../styles/pages/Home"
-import { Skills } from "../styles/pages/Home"
+import { Edu } from "../styles/pages/Home"
 import { Cases } from "../styles/pages/Home"
 import { Call } from "../styles/pages/Home"
 
@@ -23,14 +23,14 @@ const IndexPage: React.FC = () => {
 
   return (
     <Layout>
-      <Hello id="1">
+      <Hello id="hello">
         <h1>{intl.formatMessage({ id: "home_title" })}</h1>
         <h2>{intl.formatMessage({ id: "home_subtitle" })}</h2>
       </Hello>
-      <Me id="2"></Me>
-      <Skills id="3"></Skills>
-      <Cases id="4"></Cases>
-      <Call id="5"></Call>
+      <Me id="me"></Me>
+      <Edu id="edu"></Edu>
+      <Cases id="cases"></Cases>
+      <Call id="call"></Call>
     </Layout>
   )
 }

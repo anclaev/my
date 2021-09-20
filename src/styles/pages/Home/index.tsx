@@ -56,9 +56,9 @@ export const Me = styled.section`
   background: var(--color-primary);
 `
 
-// Секция 'Skills'
+// Секция 'Edu'
 
-export const Skills = styled.section`
+export const Edu = styled.section`
   background: #fff;
 `
 

@@ -81,5 +81,11 @@ module.exports = {
         redirect: true,
       },
     },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        diration: 1500,
+      }
+    }
   ],
 }

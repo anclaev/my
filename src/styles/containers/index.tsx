@@ -134,7 +134,7 @@ export const MenuItems = styled.div`
     }
   }
 
-  & > a[data-current="true"]:after {
+  & > a.current:after {
     width: 100%;
   }
 

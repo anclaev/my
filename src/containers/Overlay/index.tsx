@@ -10,7 +10,7 @@ const Overlay: React.FC = () => {
   return (
     <>
       <Header status={menu} setStatus={setMenu}/>
-      <Menu status={menu} />
+      <Menu status={menu} setStatus = {setMenu}/>
       <Social />
     </>
     )

@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-404-tsx",
     "path": "/en/404.html",
-    "result": {"pageContext":{"language":"en","intl":{"language":"en","languages":["ru","en"],"messages":{"site_title":"Web Developer | Anclaev","site_description":"Developing progressive web applications","home_title":"Developing progressive web applications","home_subtitle":"Frontend & Web Design","home_background_alt":"Image: Background (Rainy)"},"routed":true,"originalPath":"/404.html","redirect":true,"defaultLanguage":"ru"}}},
+    "result": {"pageContext":{"language":"en","intl":{"language":"en","languages":["ru","en"],"messages":{"site_title":"Web-developer | Anclaev","site_description":"Developing progressive web applications","home_title":"Developing progressive web applications","home_subtitle":"Frontend & Web Design","home_background_alt":"Image: Background (Rainy)"},"routed":true,"originalPath":"/404.html","redirect":true,"defaultLanguage":"ru"}}},
     "staticQueryHashes": []}

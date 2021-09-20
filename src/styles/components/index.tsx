@@ -99,7 +99,7 @@ export const Background = styled.div<Pick<IBackground, "transparency">>`
 `
 
 export const Social = styled.div`
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: column-reverse;
 

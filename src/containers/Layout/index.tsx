@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { useIntl } from "gatsby-plugin-intl"
 import { Helmet } from "react-helmet"
 
@@ -22,7 +22,6 @@ const Layout: React.FC = ({ children }) => {
     status: false,
   })
 
-  const [scroll, setScroll] = useState<number>(0)
 
   const cursorMoveHandler = (e: any) => {
     let isActive = false
@@ -33,31 +32,12 @@ const Layout: React.FC = ({ children }) => {
     }
     setCursor({ x: e.clientX, y: e.clientY, status: isActive })
   }
-
-  const wheelHandler = (e: WheelEvent) => {
-    e.stopPropagation()
-
-    let newY = refEl.current.scrollTop
-
-    // console.log("new Y: ", newY)
-    // console.log("scroll: ", scroll)
-    console.log("e: ", e)
-
-    // if (newY > scroll) {
-    //   refEl.current.scrollTo(0, scroll + window.innerHeight)
-    // } else {
-    //   refEl.current.scrollTo(0, scroll - window.innerHeight)
-    // }
-
-    // setScroll(newY)
-  }
-
+ 
   return (
     <>
       <StyledDoc />
       <Styled
         onMouseMove={cursorMoveHandler}
-        // onWheel={wheelHandler}
         ref={refEl}
       >
         <Helmet htmlAttributes={{ lang: intl.locale }}>

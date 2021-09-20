@@ -191,3 +191,76 @@ export const MenuIcon = styled.div<{ status: boolean }>`
     }
   }
 `
+
+export const Lang = styled.button`
+  position: absolute;
+  right: 1.25rem;
+  bottom: calc(2.917rem - 25px);
+  padding: 35px 65px;
+  cursor: pointer;
+  user-select: none;
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+
+  & > span[data-lang] {
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    opacity: 1;
+  }
+
+  & > span {
+    position: absolute;
+    transition: 0.4s;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+  & > span:first-child {
+    left: -40px;
+  }
+
+  & > span:last-child {
+    left: 40px;
+  }
+
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    content: "";
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    opacity: 1;
+    
+    &:after {
+      width: 40px;
+      height: 40px;
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 1140px) {
+    right: -0.3rem;
+  }
+
+  @media (max-width: 992px) {
+    bottom: 15px;
+  }
+
+  @media (max-width: 370px) {
+    display: none;
+  }
+`

@@ -3,6 +3,8 @@ import React from 'react'
 import { Menu as Styled, MenuContainer, MenuItems } from "../../styles/containers"
 
 import Social from '../../components/Social'
+import Lang from '../../components/Lang'
+
 import { IMenu } from "../../types/components"
 
 const Menu: React.FC<IMenu> = ({ status }) => (
@@ -20,6 +22,7 @@ const Menu: React.FC<IMenu> = ({ status }) => (
         <Social custom />
       </div>
     </MenuContainer>
+    <Lang />
   </Styled>
 )
 

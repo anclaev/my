@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react"
-import { useIntl } from "gatsby-plugin-intl"
+import React, { useRef, useState } from "react"
+import { useIntl } from "gatsby-plugin-react-intl"
 import { Helmet } from "react-helmet"
 
 import StyledDoc from "../../styles"

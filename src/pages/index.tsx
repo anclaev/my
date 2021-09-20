@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
-import { useIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-react-intl"
+import { useSectionScroll } from "../funcs"
 
 import Layout from "../containers/Layout"
 
@@ -8,12 +9,11 @@ import { Me } from "../styles/pages/Home"
 import { Skills } from "../styles/pages/Home"
 import { Cases } from "../styles/pages/Home"
 import { Call } from "../styles/pages/Home"
-import { useSectionScroll } from "../funcs/dom"
 
 const IndexPage: React.FC = () => {
   const intl = useIntl()
   const scroll = useSectionScroll()
-  
+
   useEffect(() => {
     scroll.init()
     return () => {

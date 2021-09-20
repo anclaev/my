@@ -32,6 +32,7 @@ export const Header = styled.header`
 
 export const Menu = styled.div<IMenu>`
   position: fixed;
+  overflow: hidden;
   z-index: 6;
 
   display: flex;

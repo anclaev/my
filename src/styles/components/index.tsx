@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, {css} from "styled-components"
 
 import { IBackground } from "../../types/components"
 
@@ -99,7 +99,7 @@ export const Background = styled.div<Pick<IBackground, "transparency">>`
 `
 
 export const Social = styled.div`
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column-reverse;
 
@@ -140,5 +140,47 @@ export const SocialLink = styled.a`
     width: 18px;
     height: 18px;
     mix-blend-mode: difference;
+  }
+`
+
+export const MenuWrapper = styled.button`
+  position: absolute;
+  overflow: visible;
+  padding: 20px;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 7;
+`
+
+export const MenuIcon = styled.div<{ status: boolean }>`
+  position: relative;
+  overflow: visible;
+  & > span {
+    display: block;
+    width: 50px;
+    height: 0.5px;
+    background: #fff;
+    transition: 0.2s;
+    ${(props) =>
+      props.status
+        ? css`
+            &:first-child {
+              transform: rotate(45deg) translateX(1px);
+            }
+            &:last-child {
+              transform: rotate(-45deg) translateX(1px);
+            }
+          `
+        : ""}
+    &:nth-child(2) {
+      margin: ${(props) => (props.status ? "0" : "7px 0")};
+      ${(props) =>
+        props.status
+          ? css`
+              opacity: 0;
+            `
+          : ""}
+    }
   }
 `

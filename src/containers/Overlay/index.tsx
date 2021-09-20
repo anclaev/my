@@ -1,13 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Header from "../Header"
+import Menu from "../Menu"
 import Social from "../../components/Social"
 
-const Overlay: React.FC = () => (
-  <>
-    <Header />
-    <Social />
-  </>
-)
+const Overlay: React.FC = () => {
+  const [menu, setMenu] = useState<boolean>(false)
+
+  return (
+    <>
+      <Header status={menu} setStatus={setMenu}/>
+      <Menu status={menu} />
+      <Social />
+    </>
+    )
+}
 
 export default Overlay

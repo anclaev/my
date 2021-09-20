@@ -22,7 +22,6 @@ const Layout: React.FC = ({ children }) => {
     status: false,
   })
 
-
   const cursorMoveHandler = (e: any) => {
     let isActive = false
     try {

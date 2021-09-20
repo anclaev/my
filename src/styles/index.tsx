@@ -41,6 +41,9 @@ const StyledDoc = createGlobalStyle`
 
     body section {
         height: 100%;
+    }
+
+    body section, div.menu {
         padding-left: 12.5%;
         padding-right: 12.5%;
     }
@@ -104,7 +107,7 @@ const StyledDoc = createGlobalStyle`
             font-size: 24px;
         }
 
-        body section {
+        body section, div.menu {
             padding-left: 1.25rem;
             padding-right: 1.25rem;
         }

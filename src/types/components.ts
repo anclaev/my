@@ -12,3 +12,11 @@ export interface IBackground {
   transparency: string
   alt: string
 }
+
+export interface IMenu {
+  status: boolean
+}
+
+export interface IMenuProps extends IMenu {
+  setStatus?: (status: boolean) => void
+}

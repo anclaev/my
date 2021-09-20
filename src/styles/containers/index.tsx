@@ -47,7 +47,14 @@ export const Menu = styled.div<IMenu>`
   transition: 0.7s;
   background: #fff;
   color: #000;
+
+  @media (max-width: 576px) {
+    height: 100%;
+    right: ${({status}) => status ? 0 : '-100vw'};
+    left: auto;
+  }
 `
+
 
 export const MenuContainer = styled.div`
   display: flex;

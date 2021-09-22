@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components'
 
-import Fonts from "./fonts.css"
+import Fonts from './fonts.css'
 
 const StyledDoc = createGlobalStyle`
     ${Fonts}

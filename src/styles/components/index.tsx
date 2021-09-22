@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components"
+import styled, { css } from "styled-components"
 
 import { IBackground } from "../../types/components"
 
@@ -98,16 +98,19 @@ export const Background = styled.div<Pick<IBackground, "transparency">>`
   }
 `
 
-export const Social = styled.div<{custom: boolean}>`
-  position: ${({custom}) => custom ? 'relative' : 'fixed'};
+export const Social = styled.div<{ custom: boolean }>`
+  position: ${({ custom }) => (custom ? "relative" : "fixed")};
 
-  display: ${({custom}) => custom ? 'none' : 'flex'};
-  flex-direction: ${({custom}) => custom ?'row-reverse' : 'column-reverse'};
+  display: ${({ custom }) => (custom ? "none" : "flex")};
+  flex-direction: ${({ custom }) =>
+    custom ? "row-reverse" : "column-reverse"};
   
-  ${({custom}) => !custom && `
+  ${({ custom }) =>
+    !custom &&
+    `
   left: calc(3.333rem - 18px);
   bottom: calc(2.917rem - 25px);
-  ` }}
+  `}}
 
   mix-blend-mode: difference; 
   z-index: 7;
@@ -117,7 +120,7 @@ export const Social = styled.div<{custom: boolean}>`
   }
 
   @media (max-width: 992px) {
-    display: ${({custom}) => custom ? 'flex' : 'none'};
+    display: ${({ custom }) => (custom ? "flex" : "none")};
     
     & > a {
       padding: 10px 30px;
@@ -194,19 +197,26 @@ export const MenuIcon = styled.div<{ status: boolean }>`
 
 export const Lang = styled.button`
   position: absolute;
-  right: 1.25rem;
-  bottom: calc(2.917rem - 25px);
-  padding: 35px 65px;
-  cursor: pointer;
-  user-select: none;
+  right: 3em;
+  top: 50%;
+  transform: translateY(-50%);
+
   width: 30px;
   height: 30px;
+  padding: 35px;
+
+  cursor: pointer;
+  user-select: none;
+  color: var(--color-bg);
+  mix-blend-mode: difference;
+
   font-size: 24px;
   text-transform: uppercase;
   text-align: center;
+
   opacity: 1;
   transition: 0.3s;
-  cursor: pointer;
+  z-index: 7;
 
   & > span[data-lang] {
     left: 50% !important;
@@ -244,7 +254,7 @@ export const Lang = styled.button`
 
   &:hover {
     opacity: 1;
-    
+
     &:after {
       width: 40px;
       height: 40px;
@@ -252,15 +262,7 @@ export const Lang = styled.button`
     }
   }
 
-  @media (max-width: 1140px) {
-    right: -0.3rem;
-  }
-
-  @media (max-width: 992px) {
-    bottom: 15px;
-  }
-
-  @media (max-width: 370px) {
-    display: none;
+  @media screen and (max-width: 576px) {
+    font-size: 18px;
   }
 `

@@ -3,5 +3,9 @@
   "site_description": "Разработка прогрессивных веб-приложений",
   "home_title": "Разработка прогрессивных веб-приложений",
   "home_subtitle": "Фронтенд & веб-дизайн",
-  "home_background_alt": "Image: Фон (Дождливый)"
+  "home_background_alt": "Image: Фон (Дождливый)",
+  "menu_item_home": "Начало",
+  "menu_item_me": "Кто я",
+  "menu_item_edu": "Навыки",
+  "menu_item_cases": "Проекты"
 }

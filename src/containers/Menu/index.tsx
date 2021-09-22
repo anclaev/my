@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { navigate } from "gatsby-link"
+import { useIntl } from "gatsby-plugin-react-intl"
 
 import {
   Menu as Styled,
@@ -13,6 +14,7 @@ import { IMenuProps } from "../../types/components"
 
 const Menu: React.FC<IMenuProps> = ({ status, setStatus }) => {
   const [section, setSection] = useState<string>("hello")
+  const intl = useIntl()
 
   const clickHandler = (e: any) => {
     const target = e.target.dataset.target
@@ -33,28 +35,28 @@ const Menu: React.FC<IMenuProps> = ({ status, setStatus }) => {
               onClick={clickHandler}
               data-target="hello"
             >
-              Начало
+              {intl.formatMessage({ id: "menu_item_home" })}
             </a>
             <a
               className={`cursor${section === "me" ? " current" : ""}`}
               onClick={clickHandler}
               data-target="me"
             >
-              Кто я
+              {intl.formatMessage({ id: "menu_item_me" })}
             </a>
             <a
               className={`cursor${section === "edu" ? " current" : ""}`}
               onClick={clickHandler}
               data-target="edu"
             >
-              Навыки
+              {intl.formatMessage({ id: "menu_item_edu" })}
             </a>
             <a
               className={`cursor${section === "cases" ? " current" : ""}`}
               onClick={clickHandler}
               data-target="cases"
             >
-              Проекты
+              {intl.formatMessage({ id: "menu_item_cases" })}
             </a>
           </MenuItems>
         </div>

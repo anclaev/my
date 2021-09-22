@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components"
 
-import Fonts from './fonts.css'
+import Fonts from "./fonts.css"
 
 const StyledDoc = createGlobalStyle`
     ${Fonts}
@@ -36,7 +36,7 @@ const StyledDoc = createGlobalStyle`
         min-height: 100vh;
         background: #111;
         font-family: 'Bebas Neue';
-        color: var(--color-light);
+        color: var(--color-content);
     }
 
     body section {
@@ -68,6 +68,10 @@ const StyledDoc = createGlobalStyle`
     a {
         color: inherit;
         text-decoration: none;
+    }
+
+    button:active, button:focus, button {
+        outline: none !important;
     }
 
 

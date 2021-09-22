@@ -1,6 +1,6 @@
 {
     "componentChunkName": "component---src-pages-404-tsx",
     "path": "/en/404/",
-    "result": {"pageContext":{"matchPath":"/en/*","language":"en","intl":{"language":"en","languages":["ru","en"],"messages":{"site_title":"Web-developer | Anclaev","site_description":"Developing progressive web applications","home_title":"Developing progressive web applications","home_subtitle":"Frontend & Web Design","home_background_alt":"Image: Background (Rainy)"},"routed":true,"originalPath":"/404/","redirect":true,"redirectDefaultLanguageToRoot":true,"defaultLanguage":"ru","fallbackLanguage":"","ignoredPaths":[]}}},
+    "result": {"pageContext":{"matchPath":"/en/*","language":"en","intl":{"language":"en","languages":["ru","en"],"messages":{"site_title":"Web-developer | Anclaev","site_description":"Developing progressive web applications","home_title":"Developing progressive web applications","home_subtitle":"Frontend & Web Design","home_background_alt":"Image: Background (Rainy)","menu_item_home":"Home","menu_item_me":"About me","menu_item_edu":"Skills","menu_item_cases":"Projects"},"routed":true,"originalPath":"/404/","redirect":true,"redirectDefaultLanguageToRoot":true,"defaultLanguage":"ru","fallbackLanguage":"","ignoredPaths":[]}}},
     "staticQueryHashes": [],
     "matchPath": "/en/*"}

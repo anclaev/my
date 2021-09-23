@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-404-tsx",
+    "path": "/ru/404.html",
+    "result": {"pageContext":{"language":"ru","intl":{"language":"ru","languages":["ru","en"],"messages":{"site_title":"Веб-девелопер — Анклаев","site_description":"Разработка прогрессивных веб-приложений","home_title":"Разработка прогрессивных веб-приложений","home_subtitle":"Фронтенд & веб-дизайн","home_background_alt":"Image: Фон (Дождливый)","menu_item_home":"Начало","menu_item_me":"Кто я","menu_item_edu":"Навыки","menu_item_cases":"Проекты","me_hi":"Привет","me_about":"Я занимаюсь веб-разработкой на протяжении 2&nbsp;лет и нахожусь в пути от&nbsp;<span class='w'>верстальщика лэндингов</span> до&nbsp;<span class='w'>fullstack-разработчика</span>.<span class='a'> — Артём Самарин, <span class='w'>фрилансер</span>.</span>","me_action":"Изучение Gatsby и Nest JS..."},"routed":true,"originalPath":"/404.html","redirect":true,"redirectDefaultLanguageToRoot":true,"defaultLanguage":"en","fallbackLanguage":"","ignoredPaths":[]}}},
+    "staticQueryHashes": []}

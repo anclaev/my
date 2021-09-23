@@ -39,6 +39,25 @@ const IndexPage: React.FC = () => {
         <h2>{intl.formatMessage({ id: "home_subtitle" })}</h2>
       </Hello>
       <Me id="me">
+        <span className="hi">Привет</span>
+        <div className="about">
+          <p>
+            Я занимаюсь веб-разработкой на протяжении 2&nbsp;лет и нахожусь в
+            пути от&nbsp;
+            <span className="w">верстальщика лэндингов</span> до&nbsp;
+            <span className="w">fullstack-разработчика</span>.
+            <span className="a">
+              — Артём Самарин, <span className="w">фрилансер</span>
+            </span>
+          </p>
+        </div>
+        <div className="progress">
+          <span>Изучение Gatsby и Nest JS...</span>
+          <div>
+            <span className="val">70%</span>
+            <div className="status" style={{ width: "70%" }} />
+          </div>
+        </div>
         <AnclaevImage
           alt="Artem Samarin"
           image={img.childImageSharp.gatsbyImageData}

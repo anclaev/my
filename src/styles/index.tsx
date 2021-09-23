@@ -74,6 +74,11 @@ const StyledDoc = createGlobalStyle`
         outline: none !important;
     }
 
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
 
     h1 {
         font: inherit;

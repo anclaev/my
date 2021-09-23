@@ -76,7 +76,7 @@ module.exports = {
       options: {
         path: `${__dirname}/src/intl`,
         languages: [`ru`, `en`],
-        defaultLanguage: `ru`,
+        defaultLanguage: `en`,
         redirectDefaultLanguageToRoot: true,
         redirect: true,
       },
@@ -85,7 +85,7 @@ module.exports = {
       resolve: "gatsby-plugin-anchor-links",
       options: {
         diration: 1500,
-      }
-    }
+      },
+    },
   ],
 }

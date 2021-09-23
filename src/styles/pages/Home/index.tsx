@@ -64,13 +64,29 @@ export const Me = styled.section`
   padding-top: 6rem;
   padding-bottom: 3rem;
 
+  background: var(--color-primary);
+
+  &:not(.focus) {
+    & > div.progress > div {
+      & > span.val {
+        opacity: 0 !important;
+      }
+
+      & > div.status {
+        width: 1px !important;
+      }
+    }
+
+    & > div.ava img {
+      opacity: 0 !important;
+    }
+  }
+
   &,
   & > * {
     overflow-y: hidden;
     z-index: 1;
   }
-
-  background: var(--color-primary);
 
   & > span.hi {
     display: block;
@@ -126,13 +142,21 @@ export const Me = styled.section`
         right: 5px;
         top: 50%;
         transform: translateY(-50%);
+        transition: 0.5s;
+        transition-delay: 0.5s;
         font-size: 3rem;
       }
 
       & > div.status {
         background: var(--color-bg);
+        transition: 1.5s;
+        transition-delay: 0.5s;
         height: inherit;
       }
+    }
+
+    & > div.ava img {
+      opacity: 1;
     }
   }
 

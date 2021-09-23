@@ -46,7 +46,7 @@ const IndexPage: React.FC = () => {
               <span className="w">верстальщика лэндингов</span> до&nbsp;
               <span className="w">fullstack-разработчика</span>.
               <span className="a">
-                — Артём Самарин, <span className="w">фрилансер</span>
+                — Артём Самарин, <span className="w">фрилансер</span>.
               </span>
             </p>
           </div>
@@ -60,6 +60,7 @@ const IndexPage: React.FC = () => {
           <AnclaevImage
             alt="Artem Samarin"
             image={img.childImageSharp.gatsbyImageData}
+            className="ava"
           />
         </Me>
       </Intersection>

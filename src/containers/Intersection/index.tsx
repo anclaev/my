@@ -1,14 +1,23 @@
-import { useCallback, useRef, Children, cloneElement } from "react"
+import React, { useCallback, useRef, Children, cloneElement } from "react"
 import { useInView } from "react-intersection-observer"
 
 const mutationChildren = (children: any, props: any) =>
-  Children.map(children, (child) =>
-    cloneElement(child, { ...child.props, ...props }, child.props.children)
-  )
+  Children.map(children, (child, key) => {
+    let childrens = Children.toArray(child.props.children)
+    childrens.push(<a ref={props.ref} key={key}></a>)
+
+    return cloneElement(
+      child,
+      { ...child.props, className: props.className },
+      childrens
+    )
+  })
 
 const Intersection: React.FC = ({ children }) => {
   const ref = useRef()
-  const [inViewRef, inView] = useInView()
+  const [inViewRef, inView] = useInView({
+    rootMargin: "1000px 0px 1000px 0px",
+  })
 
   const setRefs = useCallback(
     (node) => {
@@ -18,7 +27,10 @@ const Intersection: React.FC = ({ children }) => {
     [inViewRef]
   )
 
-  return mutationChildren(children, { ref: setRefs, dataView: inView })
+  return mutationChildren(children, {
+    ref: setRefs,
+    className: inView && "focus",
+  })
 }
 
 export default Intersection

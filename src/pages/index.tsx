@@ -11,7 +11,6 @@ import { AnclaevImage, Hello, Me, Edu, Cases, Call } from "../styles/pages/Home"
 
 const IndexPage: React.FC = () => {
   const intl = useIntl()
-  const { ref, inView } = useInView({})
   const scroll = useSectionScroll()
 
   const { img } = useStaticQuery(graphql`
@@ -38,7 +37,7 @@ const IndexPage: React.FC = () => {
         <h2>{intl.formatMessage({ id: "home_subtitle" })}</h2>
       </Hello>
       <Intersection>
-        <Me id="me" data-view={inView}>
+        <Me id="me">
           <span className="hi">Привет</span>
           <div className="about">
             <p>
@@ -46,7 +45,7 @@ const IndexPage: React.FC = () => {
               пути от&nbsp;
               <span className="w">верстальщика лэндингов</span> до&nbsp;
               <span className="w">fullstack-разработчика</span>.
-              <span className="a" ref={ref}>
+              <span className="a">
                 — Артём Самарин, <span className="w">фрилансер</span>
               </span>
             </p>

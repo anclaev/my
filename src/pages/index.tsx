@@ -38,20 +38,33 @@ const IndexPage: React.FC = () => {
       </Hello>
       <Intersection>
         <Me id="me">
-          <span className="hi">Привет</span>
+          <span
+            className="hi"
+            dangerouslySetInnerHTML={{
+              __html: intl.formatMessage({ id: "me_hi" }),
+            }}
+          />
           <div className="about">
-            <p>
-              Я занимаюсь веб-разработкой на протяжении 2&nbsp;лет и нахожусь в
+            <p
+              dangerouslySetInnerHTML={{
+                __html: intl.formatMessage({ id: "me_about" }),
+              }}
+            >
+              {/* Я занимаюсь веб-разработкой на протяжении 2&nbsp;лет и нахожусь в
               пути от&nbsp;
               <span className="w">верстальщика лэндингов</span> до&nbsp;
               <span className="w">fullstack-разработчика</span>.
               <span className="a">
                 — Артём Самарин, <span className="w">фрилансер</span>.
-              </span>
+              </span> */}
             </p>
           </div>
           <div className="progress">
-            <span>Изучение Gatsby и Nest JS...</span>
+            <span
+              dangerouslySetInnerHTML={{
+                __html: intl.formatMessage({ id: "me_action" }),
+              }}
+            />
             <div>
               <span className="val">70%</span>
               <div className="status" style={{ width: "70%" }} />

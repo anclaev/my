@@ -7,5 +7,8 @@
   "menu_item_home": "Начало",
   "menu_item_me": "Кто я",
   "menu_item_edu": "Навыки",
-  "menu_item_cases": "Проекты"
+  "menu_item_cases": "Проекты",
+  "me_hi": "Привет",
+  "me_about": "Я занимаюсь веб-разработкой на протяжении 2&nbsp;лет и нахожусь в пути от&nbsp;<span class='w'>верстальщика лэндингов</span> до&nbsp;<span class='w'>fullstack-разработчика</span>.<span class='a'> — Артём Самарин, <span class='w'>фрилансер</span>.</span>",
+  "me_action": "Изучение Gatsby и Nest JS..."
 }

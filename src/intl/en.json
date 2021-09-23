@@ -7,5 +7,8 @@
   "menu_item_home": "Home",
   "menu_item_me": "About me",
   "menu_item_edu": "Skills",
-  "menu_item_cases": "Projects"
+  "menu_item_cases": "Projects",
+  "me_hi": "Hello",
+  "me_about": "I have been engaged in web development for 2&nbsp;years and am on the way from<span class='w'>landing page designer</span> to&nbsp;<span class='w'>fullstack developer</span>.<span class='a'>— Artem Samarin, <span class='w'>Freelancer</span>.</span>",
+  "me_action": "Learning Gatsby and Nest JS..."
 }

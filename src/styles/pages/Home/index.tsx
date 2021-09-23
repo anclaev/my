@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import Image from "../../../components/Image"
+
 // Секция 'Hello'
 
 export const Hello = styled.section`
@@ -53,7 +55,9 @@ export const Hello = styled.section`
 // Секция 'Me'
 
 export const Me = styled.section`
+  position: relative;
   background: var(--color-primary);
+  overflow: hidden;
 `
 
 // Секция 'Edu'
@@ -72,4 +76,18 @@ export const Cases = styled.section`
 
 export const Call = styled.section`
   background: #fff;
+`
+
+// Изображение автора
+
+export const AnclaevImage = styled(Image)`
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &,
+  & * {
+    height: 100%;
+  }
 `
